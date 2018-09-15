@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width,maximum-scale=2">
+    <meta name="description" content="ApproxJoin : Approximate Distributed Joins">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="/assets/css/style.css?v=">
+
+<!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>ApproxJoin | Approximate Distributed Joins</title>
+<meta property="og:title" content="ApproxJoin" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Approximate Distributed Joins" />
+<meta property="og:description" content="Approximate Distributed Joins" />
+<link rel="canonical" href="http://localhost:4000/" />
+<meta property="og:url" content="http://localhost:4000/" />
+<meta property="og:site_name" content="ApproxJoin" />
+<script type="application/ld+json">
+{"name":"ApproxJoin","description":"Approximate Distributed Joins","author":null,"@type":"WebSite","url":"http://localhost:4000/","publisher":null,"image":null,"headline":"ApproxJoin","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="">View on GitHub</a>
+
+          <h1 id="project_title">ApproxJoin</h1>
+          <h2 id="project_tagline">Approximate Distributed Joins</h2>
+
+          
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <div class="large-2 large-push-2 columns" style="text-align:center;">
+        <a href="https://dl.acm.org">
+            <img class="t0" width="60%" src="/images/acm-icon.png" alt="Paper" />
+            <div style="text-align:center; margin: 0 0 0 0; font-size: 0.8em;">Paper</div>
+        </a>
+</div>
+
+<div class="large-2 large-push-2 columns" style="text-align:center;">
+        <a href="https://arxiv.org/pdf/1805.05874.pdf">
+            <img class="t0" width="60%" src="/images/report-icon.png" alt="Technical report" />
+            <div style="text-align:center; margin: 0 0 0 0; font-size: 0.8em;">Technical report</div>
+        </a>
+</div>
+
+<div class="large-2 large-push-2 columns" style="text-align:center;">
+        <a href="/docs/bib.md">
+            <img class="t0" width="60%" src="/images/bibtex-icon.png" alt="Bibtex" />
+            <div style="text-align:center; margin: 0 0 0 0; font-size: 0.8em;">BibTex</div>
+        </a>   
+</div>
+
+<div class="large-2 large-push-2 columns" style="text-align:center;">
+        <a href="https://github.com/approxjoin?tab=repositories">
+            <img class="t0" width="60%" src="/images/github-icon.png" alt="Source code" />
+            <div style="text-align:center; margin: 0 0 0 0; font-size: 0.8em;">Source code</div>
+        </a>
+</div>
+
+<hr />
+
+<h1 id="introduction">Introduction</h1>
+<p>The join operation is a fundamental building block of parallel data processing. Unfortunately, it is very resource-intensive to compute an equi-join across massive datasets. The approximate computing paradigm allows users to trade accuracy and latency for expensive data processing operations. The equi-join operator is thus a natural candidate for optimization using approximation techniques.</p>
+
+<!-- <div align="center">
+  <img style="text-align:center;" class="img-join" src="/images/join.png" alt="join" style="height: 150px; weight: 100px;"/>
+</div> -->
+
+<p>Although sampling-based approaches are widely used for approximation, sampling over joins is a compelling but challenging task
+regarding the output quality. Naive approaches, which perform joins over dataset samples, would not preserve statistical properties
+of the join output.</p>
+
+<div align="center">
+  <img style="height: 250px; weight: 350px;" class="img-approxjoin" src="/images/approxjoin.jpg" alt="approxjoin" />
+</div>
+
+<p>To realize this potential, we interweave Bloom filter sketching and stratified sampling with the join computation in a new operator, ApproxJoin, that preserves the statistical properties of the join output. ApproxJoin leverages a Bloom filter to avoid shuffling non-joinable data items around the network and then applies stratified sampling to obtain a representative sample of the join output. Our analysis shows thatApproxJoin scales well and significantly reduces data movement, without sacrificing tight error bounds on the accuracy of the final results.</p>
+
+<h1 id="source-code">Source Code</h1>
+<p>Source code will be available soon.
+<!-- The source code of ApproxJoin is available <a href="https://github.com/approxjoin?tab=repositories"> here </a> --></p>
+<ul>
+  <li>Cluster deployment <a href="https://github.com/approxjoin/spark-setup"> script </a></li>
+</ul>
+
+<hr />
+<h1 id="news">News</h1>
+<ul>
+  <li>This work has been accepted to ACM SoCC’18, see you in Carlsbad, California!</li>
+</ul>
+
+<hr />
+
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        
+        <p><a href="https://approxjoin.github.io/"></a></p>
+      </footer>
+    </div>
+
+    
+  </body>
+</html>

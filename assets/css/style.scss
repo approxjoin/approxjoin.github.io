@@ -1,0 +1,47 @@
+---
+---
+
+@import "jekyll-theme-slate";
+
+#header_wrap {
+  background: #0B2A51;
+  background: -moz-linear-gradient(top, #122947, #0B2A51);
+  background: -webkit-linear-gradient(top, #122947, #0B2A51);
+  background: -ms-linear-gradient(top, #122947, #0B2A51);
+  background: -o-linear-gradient(top, #122947, #0B2A51);
+  background: linear-gradient(top, #122947, #0B2A51); }
+
+#header_wrap .inner {
+  padding: 3px 3px 3px 3px; }
+
+// .mainDIV{
+//       position:relative;
+//       background:yellow;
+//       width:100%;
+//       min-width:315px;
+//   }
+//
+// .leftDIV{
+//       position:absolute;
+//       top:0px;
+//       left:0px;
+//       height:50px;
+//       width:100px;
+//       background:red;
+//   }
+// .middleDIV{
+//       height:50px;
+//       width:100px;
+//       background:blue;
+//       margin:0px auto;
+//   }
+// .rightDIV{
+//       position:absolute;
+//       top:0px;
+//       right:0px;
+//       height:50px;
+//       width:100px;
+//       background:green;
+//   }
+
+@import url("/assets/css/styles_feeling_responsive.css");
