@@ -24,7 +24,7 @@ layout: default
 </div>
 
 <div class="large-2 large-push-2 columns" markdown="0" style="text-align:center;">
-        <a href="https://github.com/approxjoin?tab=repositories">
+        <a href="https://approxjoin.github.io/">
             <img class="t0" width="60%" src="/images/github-icon.png" alt="Source code">
             <div style="text-align:center; margin: 0 0 0 0; font-size: 0.8em;">Source code</div>
         </a>
@@ -39,9 +39,7 @@ The join operation is a fundamental building block of parallel data processing. 
   <img style="text-align:center;" class="img-join" src="/images/join.png" alt="join" style="height: 150px; weight: 100px;"/>
 </div> -->
 
-Although sampling-based approaches are widely used for approximation, sampling over joins is a compelling but challenging task
-regarding the output quality. Naive approaches, which perform joins over dataset samples, would not preserve statistical properties
-of the join output.
+Although sampling-based approaches are widely used for approximation, sampling over joins is a compelling but challenging task regarding the output quality. Naive approaches, which perform joins over dataset samples, would not preserve statistical properties of the join output.
 
 <div align="center">
   <img style="text-align:center;" class="img-approxjoin" src="/images/approxjoin.jpg" alt="approxjoin" style="height: 250px; weight: 350px;"/>
